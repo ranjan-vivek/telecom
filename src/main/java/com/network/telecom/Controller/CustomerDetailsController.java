@@ -82,4 +82,11 @@ public class CustomerDetailsController {
         customerDetailsService.deactivateCustomerDetails(id);
         return ResponseEntity.ok(new ApiResponse(200, "Success", new Date().toString()));
     }
+
+
+    @DeleteMapping("deactivateCustomer/{id}")
+    public ResponseEntity<ApiResponse> dct(@PathVariable  int id){
+        customerDetailsService.deactivateCustomerDetails(id);
+        return ResponseEntity.ok(new ApiResponse(200, "Success", new Date().toString()));
+    }
 }

@@ -1,0 +1,38 @@
+#
+#spring.datasource:
+#  driverClassName: com.mysql.cj.jdbc.Driver
+#  url: jdbc:mysql://localhost:3306/telecom?useSSL=false
+#  username: root
+#  password: vivek
+#
+#  server:
+#    port: 8080
+#
+#   jpa:
+#    hibernate:
+#      ddl-auto: update
+#      properties:
+#        hibernate:
+#          dialect=org:
+#            hibernate:
+#              dialect: MySQL5Dialect:org.hibernate.dialect.MySQLDialect
+#
+#    show-sql: true
+
+
+    spring:
+      application:
+        name: spring boot yml example
+      datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/telecom?useSSL=false
+        username: root
+        password: vivek
+      jpa:
+        show-sql: true
+        generate-ddl: true
+        hibernate:
+          ddl-auto: update
+
+    server:
+      port: 8080

@@ -30,7 +30,7 @@ private CustomerDetailsRepository customerDetailsRepository;
     }
     public ResponseEntity<ApiResponse> SaveCustomerDetails( List<CustomerDetails> customerDetails){
       customerDetailsRepository.saveAll(customerDetails);
-
+        ResponseEntity.ok(new ApiResponse(200, "Success updated sashi", new Date().toString()));
       return ResponseEntity.ok(new ApiResponse(200, "Success updated sashi", new Date().toString()));
 
     }

@@ -24,6 +24,7 @@ private CustomerDetailsRepository customerDetailsRepository;
 
 
     public List<CustomerDetails> customerDetailsList(){
+        customerDetailsRepository.findAll();
         return    customerDetailsRepository.findAll();
 
     }

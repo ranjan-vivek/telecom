@@ -34,6 +34,10 @@ private CustomerDetailsRepository customerDetailsRepository;
 
     public ResponseEntity<ApiResponse> deactivateCustomerDetails(int id){
         customerDetailsRepository.deleteById(id);
-        return ResponseEntity.ok(new ApiResponse(200, "Success", new Date().toString()));
+        return ResponseEntity.ok(new ApiResponse(200, "Success on update", new Date().toString()));
+    }
+    public ResponseEntity<ApiResponse> agraMhagra(int id){
+        customerDetailsRepository.deleteById(id);
+        return ResponseEntity.ok(new ApiResponse(200, "Success on update dff", new Date().toString()));
     }
 }

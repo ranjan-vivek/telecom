@@ -19,7 +19,8 @@ import java.util.List;
 @Service
 public class CustomerDetailService {
 
-@Autowired
+
+    @Autowired
 private CustomerDetailsRepository customerDetailsRepository;
 
 
@@ -29,7 +30,9 @@ private CustomerDetailsRepository customerDetailsRepository;
     }
     public ResponseEntity<ApiResponse> SaveCustomerDetails( List<CustomerDetails> customerDetails){
       customerDetailsRepository.saveAll(customerDetails);
-      return ResponseEntity.ok(new ApiResponse(200, "Success updated", new Date().toString()));
+
+      return ResponseEntity.ok(new ApiResponse(200, "Success updated sashi", new Date().toString()));
+
     }
 
     public ResponseEntity<ApiResponse> deactivateCustomerDetails(int id){

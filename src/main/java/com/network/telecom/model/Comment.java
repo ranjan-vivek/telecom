@@ -1,4 +1,4 @@
-package com.network.telecom.Model;
+package com.network.telecom.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -7,19 +7,16 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table
+@Entity
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class TelecomBrands {
-
+@Table
+public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String brandName;
-    private String bandWidth;
-    private double price;
-
+    private String name;
+    private String comment;
 }

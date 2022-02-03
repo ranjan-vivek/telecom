@@ -1,4 +1,4 @@
-package com.network.telecom.Model;
+package com.network.telecom.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,4 +12,5 @@ public class ApiResponse {
     private int code;
     private String status;
     private String date;
-}
+
+    }

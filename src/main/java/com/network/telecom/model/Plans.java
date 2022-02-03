@@ -1,4 +1,4 @@
-package com.network.telecom.Model;
+package com.network.telecom.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
